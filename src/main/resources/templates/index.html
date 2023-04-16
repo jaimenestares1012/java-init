@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8" />
+	<title th:text="${titulo}">
+	</title>
+	<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+	</link>
+</head>
+
+<body>
+
+	<h1 th:text="${titulo}">
+		Hola
+	</h1>
+
+
+	<h1 class="color-rojo"> Envio de parametros
+	</h1>
+	<h2 class="color-azul"> Envio de parametros
+	</h2>
+	<img th:src="@{/images/agua.png}"></img>
+	<div>
+		Este es el index de Jaime
+	</div>
+</body>
+
+</html>

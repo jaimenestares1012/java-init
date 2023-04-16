@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8" />
+	<title> Envio de parametros
+	</title>
+	<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}" > </link>
+</head>
+
+<body>
+	<h1 class="color-rojo"> Envio de parametros
+	</h1>
+	<h2 class="color-azul"> Envio de parametros
+	</h2>
+	<img th:src="@{/images/agua.png}" ></img>
+	<div>
+		<ul>
+			<li>
+				<a th:href="@{/params/string(texto='JAIME')}">/params/string?texto=JAIME</a>
+			</li>
+			<li>
+				<a th:href="@{/params/string(texto='Que tal jaime!')}">/params/string?texto=Que tal jaime!</a>
+			</li>
+			<li>
+				<a th:href="@{/params/mix-params(saludo='Que tal jaime!', numero=9473)}">/params/mix-params?texto=Que tal jaime! & </a>
+			</li>
+			<li>
+				<a th:href="@{/params/mix-params-request(saludo='Que tal jaime!', numero=9473)}">/params/mix-params?texto=Que tal jaime! & </a>
+			</li>
+		</ul>
+	</div>
+</body>
+
+</html>
